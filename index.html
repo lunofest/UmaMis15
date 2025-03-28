@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="main.js"></script>
+    <script src="cache.js"></script>
+
+    <title>Mis 15 Años</title>
+    <link rel="stylesheet" href="estilos/style.css?v22">
+    <link rel="stylesheet" href="estilos/normalize.css?v22">
+    <link rel="stylesheet" href="estilos/mediaQueries.css?v22">
+</head>
+
+<body>
+
+    <header class="header" id="inicio">
+
+        <div class="header__text">
+            <img class="header__logo" src="assets/vectores/logo.svg" alt="">
+        </div>
+
+        <img class="header__arrow" src="assets/vectores/arrow.svg" alt="">
+
+
+
+    </header>
+
+    <main>
+
+        <section class="music" data-aos="fade-up"
+        data-aos-duration="3000">
+
+            <div class="music__contenedor">
+                <h4 class="music__text">Dale Play ↓</h4>
+                <div class="music__container">
+                    <button class="fondoIcon__music music__rewind">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button class="fondoIcon__music music__play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="fondoIcon__music music__pause">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button class="fondoIcon__music music__forward">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+                <audio class="music__audio" src="assets/musica.mp3"></audio>
+            </div>
+            </div>
+
+        </section>
+
+        <section class="temporizador" data-aos="fade-up" data-aos-duration="1000">
+            <div class="temporizador__container">
+                <h3 class="title__tempo">No falta nada!</h3>
+                <div class="timer">
+                    <div class="timer-item">
+                        <p class="timer-value" id="days">0</p>
+                        <p class="timer-label">Días</p>
+                    </div>
+                    <div class="timer-item">
+                        <p class="timer-value" id="hours">0</p>
+                        <p class="timer-label">Horas</p>
+                    </div>
+                    <div class="timer-item">
+                        <p class="timer-value" id="minutes">0</p>
+                        <p class="timer-label">Minutos</p>
+                    </div>
+                    <div class="timer-item">
+                        <p class="timer-value" id="seconds">0</p>
+                        <p class="timer-label">Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="historia" data-aos="fade-up" data-aos-duration="3000">
+
+            <h2 class="title historia__title">MI <span class="historia__span"> NOCHE SOÑADA</span></h2>
+
+            <div class="line"></div>
+
+            <p class="parrafo historia__paragraph">
+                "Hay momentos inolvidables que se atesoran en el corazón para siempre. <br> Por esa razón, quiero que compartas conmigo este día tan especial. <br> Mis 15 años"
+
+            </p>
+            <img class="historia__img1" src="assets/imagenes/mariposa1.webp" alt="">
+            <img class="historia__img2" src="assets/imagenes/mariposa2.webp" alt="">
+        </section>
+
+
+
+        <section class="fotos">
+            <h3 class="title fotos__title" data-aos="fade-up">MIS FOTOS</h3>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/uno.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/dos.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/tres.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/cuatro.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/cinco.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/seis.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/siete.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/ocho.webp" />
+                    </div>
+                  
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+
+        <section class="fest" id="agendar" data-aos="fade-up"
+        data-aos-duration="3000">
+
+             <!-- <div class="fest__container">
+
+                <h4 class="title fest__title">Misa</h4>
+
+                <img class="fest__img" src="assets/imagenes/iglesia.webp" alt="">
+                <p class="parrafo fest__paragraph">Acompañame en la misa de acción de gracias por mis 15 años, el día 20 de Diciembre del 2025 a las 20:00hs
+                    en la Iglesia Catedral, Av. 24 de Septiembre 420, San Miguel de Tucumán </p> 
+
+
+
+                <a class="boton__cta" href="https://maps.app.goo.gl/BcAq985fzZM4ut538">Ver ubicación</a>
+
+            </div>  -->
+
+            <div class="fest__container">
+                <h4 class="title fest__title">Celebración</h4>
+                <img class="fest__img" src="assets/imagenes/salon.webp" alt="">
+                <p class="parrafo fest__paragraph">Te espero para celebrar juntos, el día 15 de Noviembre del 2025 a las 21:00hs en Salón "Metropolis Eventos" Rio Senguer 746, Neuquén </p>
+
+                <a class="boton__cta" href="https://maps.app.goo.gl/PbFV1ibTkZbJVako6">Ver ubicación</a>
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+        
+        <div class="itinerarios" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+
+
+
+            <div class="itinerarios__container">
+                <h3 class="title itinerarios__title">Horarios</h3>
+
+                <div class="itinetrario__items">
+
+                    <!-- <div class="itinerario__item item1">
+                        <img class="itinerario__icon" src="assets/imagenes/iconos/iconoIGLESIA.webp" alt="">
+                        <p class="itinerario__text">Misa</p>
+                        <p class="itinerario__hora">20:00hs
+                            <img class="itinerario__time" src="assets/vectores/reloj.svg" alt="">
+                        </p>
+                    </div> -->
+                    <div class="itinerario__item item1">
+                        <img class="itinerario__icon" src="assets/imagenes/iconos/iconoINVITADOS.webp" alt="">
+                        <p class="itinerario__text">Ingreso de Invitados</p>
+                        <p class="itinerario__hora">21:00hs
+                            <img class="itinerario__time" src="assets/vectores/reloj.svg" alt="">
+                        </p>
+                    </div>
+
+                    <div class="itinerario__item item2">
+                        <img class="itinerario__icon" src="assets/imagenes/iconos/iconoQUINCEAÑERA.webp" alt="">
+                        <p class="itinerario__text">Mi Ingreso</p>
+                        <p class="itinerario__hora">21:30hs
+                            <img class="itinerario__time" src="assets/vectores/reloj.svg" alt="">
+                        </p>
+                    </div>
+
+                    <div class="itinerario__item item3">
+                        <img class="itinerario__icon" src="assets/imagenes/iconos/iconoCENA.webp" alt="">
+                        <p class="itinerario__text">Cena</p>
+                        <p class="itinerario__hora">22:00hs
+                            <img class="itinerario__time" src="assets/vectores/reloj.svg" alt="">
+                        </p>
+                    </div>
+
+                    <div class="itinerario__item item4">
+                        <img class="itinerario__icon" src="assets/imagenes/iconos/iconoVALS2.webp" alt="">
+                        <p class="itinerario__text">Vals</p>
+                        <p class="itinerario__hora">00:00hs
+                            <img class="itinerario__time" src="assets/vectores/reloj.svg" alt="">
+                        </p>
+                    </div>
+
+                    <div class="itinerario__item item5">
+                        <img class="itinerario__icon" src="assets/imagenes/iconos/iconoINICIOfiesta.webp" alt="">
+                        <p class="itinerario__text">Inicio de la fiesta</p>
+                        <p class="itinerario__hora">00:30hs
+                            <img class="itinerario__time" src="assets/vectores/reloj.svg" alt="">
+                        </p>
+                    </div>
+                    <div class="itinerario__item item6">
+                        <img class="itinerario__icon" src="assets/imagenes/iconos/iconoFIN.webp" alt="">
+                        <p class="itinerario__text">Fin de la fiesta</p>
+                        <p class="itinerario__hora">05:00hs
+                            <img class="itinerario__time" src="assets/vectores/reloj.svg" alt="">
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <section class="confirmacion" id="confirmacion" data-aos="fade-up"
+        data-aos-duration="3000">
+            <div class="confirmacion__container">
+                <h2 class="title historia__title historia__title2">Confirmá<span class="historia__span"> Tu ASISTENCIA</span>
+                </h2>
+
+                <h4 class="parrafo parrafo__confirmacion" data-aos="fade-right">
+                    Recordá que tenes hasta el día 15 de Octubre del 2025 para confirmar tu
+                    presencia <br>
+                </h4>
+                <div id="asistencia">
+                    <div class="asistencia__radios">
+                        <label class="asistencia__radio">
+                            <input class="assistencia_" type="radio" name="attendanceOption" value="SI ASISTIRÉ"> SI
+                            ASISTIRÉ
+                        </label>
+                        <label class="asistencia__radio">
+                            <input class="assistencia_" type="radio" name="attendanceOption" value="NO ASISTIRÉ"> NO
+                            ASISTIRÉ
+                        </label>
+                    </div>
+                    <br>
+                    <div class="asistencia__datos">
+                        <label class="asistencia__label" for="userFullName">Nombre y Apellido:</label>
+                        <input class="input__text" type="text" id="userFullName" placeholder="Tu nombre y apellido"
+                            required>
+                        <br>
+                        <label class="asistencia__label asistencia__label2" for="customMessage">Mensaje:</label>
+                        <textarea class="input__text input__text2" id="customMessage"
+                            placeholder="Mensaje opcional"></textarea>
+                        <br>
+                        <button class="boton__cta boton__cta3" id="botoncito1">
+                            <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg"
+                                alt="">Confirmar a Lucrecia</button>
+                        <button class="boton__cta boton__cta3" id="botoncito2"><img class="whatsapp__icon"
+                                src="assets/vectores/whatsapp_redondo.svg" alt="">Confirmar a Uma</button>
+                    </div>
+                </div>
+            </div>
+            <img class="confirmacion__fondo" src="assets/imagenes/fondo dresscode1.webp" alt="">
+        </section>
+
+
+
+
+        <section class="dresscode " id="dresscode" >
+
+            <div class="dresscode__container">
+            <h3 class="title title__dresscode">Dresscode</h3>
+            <img class="drescode__icon" src="assets/vectores/percha.svg" alt="">
+            <h4 class="subtitle subtitle__dresscode">Elegante Sport</h4>
+            <p class="parrafo dresscode__note">Por favor no asistir con vestimenta en tonos Lilas</p>
+            <img class="dresscode__img" src="assets/vectores/dresscodeVECTOR.svg" alt="">
+
+            <button class="boton__cta" id="showImage">Ver Ejemplo</button>
+
+            <div id="lightbox" class="lightbox">
+                <span id="closeButton" class="close-button">cerrar</span>
+                <img src="assets/imagenes/drescode.webp" alt="Imagen" />
+            </div>
+
+            <img class="dresscode__parte1" src="assets/imagenes/parte1-DRESSCODE.webp" 
+                alt="">
+                <img class="dresscode__parte2" src="assets/imagenes/parte2-DRESSCODE.webp" 
+                alt="">
+        </section>
+
+
+
+        <section class="insta" data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="1500"
+        data-aos-duration="1500">
+
+            <div class="insta__container">
+                <h2 class="title insta__title">ETIQUETÁ <span class="insta__span">TUS FOTOS</span></h2>
+                <img class="insta__icon" src="assets/vectores/insta.svg" alt="">
+
+                <p class="parrafo insta__paragraph">
+                    ¡Prepárate para la fiesta! <br> Etiquétame en tus fotos y videos
+                </p>
+
+
+                <a class="boton__cta boton__INSTA" href="https://www.instagram.com/focaraxsoo/?utm_source=ig_web_button_share_sheet">
+                    <img class="insta__vector" src="assets/vectores/instaICON.svg" alt="">
+                    @focaraxsoo</a>
+                <!-- <h6 class="insta__hashtag">#Vicky2024</h6> -->
+
+                <p class="parrafo insta__paragraph">
+                    Ó también podes subirlas directamente en mi álbum digital
+                </p>
+
+                <a class="boton__cta boton__INSTA" href="https://photos.app.goo.gl/1oAJxwWtisLyNzCJ6">
+                    <img class="insta__vector" src="assets/imagenes/drive.webp" alt="">
+                    Subir fotos</a>
+            </div>
+            <img class="insta__fondo" src="assets/imagenes/fondoINSTA.webp" alt="">
+        </section>
+
+
+
+        <section class="play" id="playlist" data-aos="fade-up" data-aos-duration="3000">
+            <img class="play__icon" src="assets/vectores/musica.svg" alt="">
+            <h4 class="play__title">Playlist</h4>
+
+            <h6 class="play__subtitle">¿Qué canciones crees que no puede faltar en mi fiesta?</h6>
+
+            <p class="play__footer">Ayúdame con la selección</p>
+
+            <form class="playmusic" id="musicForm">
+                <input class="input__music" type="text" placeholder="tu nombre" id="nombre" required>
+                <input class="input__music" type="text" placeholder="canción recomendada" id="cancion" required>
+                <input class="boton__cta input__submit" type="submit" value="Recomendar">
+            </form>
+
+
+
+        </section>
+
+
+
+
+        <section class="regalos" data-aos="fade-up" data-aos-duration="3000">
+
+            <img class="regalos__icon" src="assets/vectores/regalo.svg" alt="">
+
+            <h3 class="title regalos__title">REGALOS</h3>
+
+            <p class="regalos__parrafo">
+                "Quiero que sepas que tu presencia es lo más importante en mi fiesta y si deseas hacerme un
+                presente, podrás dejarlo en mi mesa de regalos, o colocar tu sobrecito en la urna a la entrada del salón, también podes hacerlo por transferencia a mi cuenta...
+                y recuerda: <br> ¡Tu cariño es el mejor regalo que puedo recibir!"
+            </p>
+
+            <button id="mostrarBoton" class="boton__cta">Ver datos bancarios</button>
+            <div id="textoDesplegable" class="escondido regalos__data">
+
+                <!-- <h6 class="regalo__date">Alias:</h6>
+                <p class="name__alias" id="alias">(aquí tu alias)</p>
+                <button class="alias__button" onclick="copyText()">
+                    <img class="copiar__icon" src="assets/vectores/copiar.svg" alt="">
+                    Copiar Alias</button>
+                <div class="copy-message" id="copyMessage">¡Copiado!</div>
+ -->
+
+                <div class="lineRegalos"></div>
+
+
+                <h6 class="regalo__date">CBU:</h6>
+                <p class="name__cbu" id="cbuAlias">0000003100027834887807	</p>
+                <button class="cbu__button" onclick="copyCbuText()">
+                    <img class="copiar__icon" src="assets/vectores/copiar.svg" alt="">
+                    Copiar CBU</button>
+                <div class="copy-message" id="copyCbuMessage" style="display: none;">¡Copiado!</div>
+            </div>
+
+
+            <img class="regalos__fondo" src="assets/imagenes/complemento1.webp" alt="">
+            <img class="regalos__fondo2" src="assets/imagenes/complemento2.webp" alt="">
+        </section>
+
+
+
+
+        <section class="frase" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+            <div class="frase__container">
+
+                <img class="frase__img" src="assets/vectores/heart.svg" alt="">
+
+                <p class="frase__paragraph">
+                    ¡Atención! <br> Mi fiesta de 15 promete ser increíble y no sería igual sin ti. ¿Te animas? <br> ¡Te espero!
+                </p>
+            </div>
+            <img class="frase__mariposas" src="assets/imagenes/footerMariposas.webp" alt="">
+
+
+        </section>
+
+
+
+        <footer data-aos="fade-up">
+
+            <div class="footer__container">
+
+                <div class="footer__content">
+
+                    <div class="footer__info">
+                        <div class="footer__text1">
+                            <h2 class="lista__footer footer__name">UMA <span class="footer__span">15 Años</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="footer__info">
+                        <div class="footer__text1 footer__text2">
+                            <a class="lista__footer footer__name2" href="#confirmacion">Confirmar Asistencia</a>
+                            <a class="lista__footer footer__name2" href="#agendar">Ubicación</a>
+                            <a class="lista__footer footer__name2" href="#dresscode">Dresscode</a>
+                            <a class="lista__footer footer__name2" href="#playlist">Sugerir Canción</a>
+                            <a class="lista__footer footer__name2" href="#inicio">Inicio</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+
+        <section class="info" id="info">
+            <h6 class="info__text">
+                Página creada por "Luno Digitales" para los 15 de Valentina - 2025 &copy todos los derechos
+                reservados
+                - <br>
+                <a class="info__link" href="https://www.luno.net.ar/">
+                    www.luno.net.ar
+                </a>
+            </h6>
+    
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js?v22"></script>
+
+</body>
+
+</html>
