@@ -207,7 +207,7 @@ document.getElementById('musicForm').addEventListener('submit', function(event) 
     const nombre = document.getElementById('nombre').value;
     const cancion = document.getElementById('cancion').value;
     const mensaje = `Hola, mi nombre es *${nombre}* y te recomiendo la canción: *${cancion}*.`;
-    const telefono = '543816591298'; // Reemplaza esto con tu número de WhatsApp
+    const telefono = '542995961595'; // Reemplaza esto con tu número de WhatsApp
     const url = `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
 });
